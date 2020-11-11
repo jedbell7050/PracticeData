@@ -20,8 +20,8 @@ e = Entropy.sent_len()
 
 fig, ax = plt.subplots(2,2)
 
-ax[0,0].hist(S, bins=30)
-ax[0,1].hist(E, bins=30)
+ax[0,0].hist(S[0], bins=30)
+ax[0,1].hist(E[0], bins=30)
 ax[0,0].set_title('Soulless')
 ax[0,0].set_xlabel('Word Lengths')
 ax[0,0].set_ylabel('Frequency')
@@ -29,8 +29,8 @@ ax[0,1].set_title('Entropy')
 ax[0,1].set_xlabel('Word Lengths')
 
 
-ax[1,0].hist(s, bins=30)
-ax[1,1].hist(e, bins=30)
+ax[1,0].hist(s[0], bins=30)
+ax[1,1].hist(e[0], bins=30)
 ax[1,0].set_xlabel('Sentence Lengths')
 ax[1,0].set_ylabel('Frequency')
 ax[1,1].set_xlabel('Sentence Lengths')
